@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "./style.css";
-
+import HoverContainer from '../smallComponents/HoverContainer'
 class Avatar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        hovered:false
+        hovered:true
     };
   }
   setHover = () => this.setState({ hovered: true });
@@ -15,9 +15,9 @@ class Avatar extends Component {
       <div className="container-fluid">
         <div className="row">
           <div className="col-12">
-            <div className="mainAvatarCard">
+            <div className="wrapper">
               <div
-                className="avatarcard"
+                className="navi"
                 onMouseOver={this.setHover}
                 onMouseOut={this.cancelHover}
               >
@@ -28,9 +28,10 @@ class Avatar extends Component {
                 <h4 className="textMiddle float-left"> Mr. Doge Wowzer</h4>
                 <span className="textMiddle float-left online"></span>
               </div>
-              {this.state.hovered ? <div className="hoverCard ">
-                <h2 className="btn btn-warning float-left">hello world</h2>
-              </div>:null }
+              {this.state.hovered ? <div className="infoi  ">
+              <HoverContainer/>
+              </div>
+              :null }
               
             </div>
           </div>
