@@ -28,34 +28,21 @@
 /*
 *  position: relative gives a new position context
 */
-.wrapper {
+.mainCardContainer {
     position: relative;
   }
   
-  /*
-  *  The .navi properties are for styling only
-  *  These properties can be changed or removed
-  */
-  .navi {
-    background-color: #eaeaea;
+/* gives basic height to our avatar body */
+  .AvatarBody {
+  
     height: 200px;
   }
   
   
-  /*
-  *  Position the #infoi element in the top-right
-  *  of the .wrapper element
-  */
-  .infoi{ 
+  /* controls the position of our hovering card */
+  .HoverCard{ 
     position: absolute;
     top: -80%;
     left: 5%;
-    /* background-color: #eaeaea; */
-    /*
-    *  Styling only, the below can be changed or removed
-    *  depending on your use case
-    */
-    /* height: 200px; */
     width:80%;
-    /* padding: 10px 10px; */
   }
